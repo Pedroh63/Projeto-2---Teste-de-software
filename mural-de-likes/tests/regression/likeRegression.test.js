@@ -1,6 +1,8 @@
-const { likePost } = require("../../src/services/postService");
+import { describe, test, expect } from 'vitest';
 
-test('Regressão: Não deve permitir like duplicado após refatoração', async () => {
-  await likePost();
-  await expect(likePost()).rejects.toThrow('publicação já curtida');
+describe('Testes de Regressão', () => {
+  test('Regressão: Não deve permitir postagem vazia', async () => {
+    const postService = require("../../src/services/postService");
+    await expect(postService.createPost(1, '')).rejects.toThrow('Conteúdo da publicação não pode estar vazio');
+  });
 });

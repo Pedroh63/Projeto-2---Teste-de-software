@@ -1,3 +1,4 @@
+import { describe, test, expect } from 'vitest';
 const userService = require('../../src/services/userService');
 
 describe('UserService', () => {
