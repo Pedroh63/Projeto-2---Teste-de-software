@@ -1,0 +1,28 @@
+{
+  "name": "mural-de-likes",
+  "version": "1.0.0",
+  "description": "Mural de Likes - Projeto de Teste de Software",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node src/server.js",
+    "test": "vitest",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.9",
+    "supertest": "^7.0.0",
+    "vitest": "^4.1.9",
+    "supertest-session": "^2.0.0"
+  }
+}
